@@ -1,0 +1,13 @@
+resource_group_name = "demo-rg-palo"
+location            = "eastus"
+vmss_name           = "vmss-paloalto"
+admin_username      = "vmssadmin"
+admin_password      = "Sachinadmmin@1234"
+subnet_ids          = ["/subscriptions/932386c3-4cfa-44ad-8ecf-82ba0e98882e/resourceGroups/Demo-RG-March24/providers/Microsoft.Network/virtualNetworks/demo-vnet-march2/subnets/WebSubnet", "/subscriptions/932386c3-4cfa-44ad-8ecf-82ba0e98882e/resourceGroups/Demo-RG-March24/providers/Microsoft.Network/virtualNetworks/demo-vnet-march2/subnets/AppSubnet"]
+paloalto_image_publisher = "paloaltonetworks"
+paloalto_image_offer     = "vmseries-flex"
+paloalto_image_sku       = "byol"
+paloalto_image_version   = "10.2.2"
+data_port 	 	 = "80"
+mgmt_port 	 	 = "443"
+public_lb_name		 = "palo-publb"
