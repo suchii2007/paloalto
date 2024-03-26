@@ -1,0 +1,7 @@
+resource_group_name = "demo-rg-palo"
+location            = "eastus"
+lb_name             = "palo-publb"
+frontend_ip_configuration_name_data = "fw-data-frontend"
+frontend_ip_configuration_name_mgmt = "fw-mgmt-frontend"
+public_ip_address_name_data = "palo-publb-pip-data"
+public_ip_address_name_mgmt = "palo-publb-pip-mgmt"
